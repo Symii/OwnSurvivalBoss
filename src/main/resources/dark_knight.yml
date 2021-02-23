@@ -1,0 +1,59 @@
+mob-type: SKELETON
+health: 400
+name: "&8&lCZARNY RYCERZ"
+exp-drop-amount: 500
+abilities:
+  thunder-on-player: true
+  spawn-minions: 0
+  explosions: false
+  throw-player: false
+  apply-potion-effects-to-player: true
+  mob-is-fast: false
+  block-player-damage: true
+weapon:
+  material: BOW
+  durability: 3
+  sharpness: 0
+  fire-aspect: 0
+  knockback: 0
+  power: 5
+  punch: 2
+  flame: 1
+  infinity: 1
+  protection: 0
+  name: "&cLuk czarnego rycerza"
+  lore:
+    - "&eBla bala bla bla"
+drop:
+  1:
+    material: DIAMOND
+    chance: 20.2
+    amount: 3
+    name: ""
+    lore:
+      - ""
+    custom-name-enabled: false
+  2:
+    material: GOLD_INGOT
+    chance: 100.0
+    amount: 5
+    name: ""
+    lore:
+      - ""
+    custom-name-enabled: false
+  3:
+    material: TRIPWIRE_HOOK
+    chance: 70.35
+    amount: 1
+    name: "&dPrzedmiot od czarnego rycereza"
+    lore:
+      - "&6Otworzysz tym &enormal_case &6skrzynke"
+    custom-name-enabled: true
+  4:
+    material: TRIPWIRE_HOOK
+    chance: 40.75
+    amount: 1
+    name: "&dJakis unikatowy przedmiot"
+    lore:
+      - "&6Otworzysz tym &elegendarna &6skrzynke"
+    custom-name-enabled: true

@@ -1,0 +1,36 @@
+world-name: "world"
+boss-spawn-range: 2000
+spawn-location:
+  x: 0
+  z: 0
+
+boss-spawn-message:
+  - "&4&lNA MAPIE SURVIVAL POJAWIL SIE BOSS!"
+  - "%boss_name% &7jest aktualnie na cordach:"
+  - "&8&m----&e X%boss_x% Y%boss_y% Z%boss_z% &8&8&m----"
+
+gui:
+  0:
+    material: ZOMBIE_HEAD
+    name: "&4&lKROL ZOMBIE"
+    lore:
+      - "&eZ tego bossa wypadaja przedmioty:"
+      - "&e20% &7x3 Diament"
+      - "&e100% &7x5 Złoto"
+      - "&e70% &7x1 Klucz do normal_case skrzynki"
+      - "&e40% &7x1 Klucz do legendarna skrzynki"
+  1:
+    material: SKELETON_SKULL
+    name: "&8&lCZARNY RYCERZ"
+    lore:
+      - "&eZ tego bossa wypadaja przedmioty:"
+      - "&e20% &7x3 Diament"
+      - "&e100% &7x5 Złoto"
+      - "&e70% &7x1 Przedmiot od czarnego rycereza"
+      - "&e40% &7x1 Jakis unikatowy przedmiot"
+  8:
+    material: CLOCK
+    name: "&eSpawnowanie sie bossow"
+    lore:
+      - "&eNastepny boss pojawi się za:"
+      - "&7- &c%minutes_left% minut"

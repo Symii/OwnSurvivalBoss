@@ -1,0 +1,18 @@
+name: OwnSurvivalBoss
+main: me.symi.survivalboss.Main
+author: Symi
+version: 1.0
+api-version: 1.16
+website: https://owncraft.eu
+
+commands:
+  bossy:
+    aliases: [bosy]
+    description: "Komenda na liste bosow"
+  ownsurvivalboss:
+    aliases: [osb]
+    description: "Komenda na spawn bossa"
+permissions:
+  ownsurvivalboss.spawn:
+    default: op
+    description: "Permisja na spawnowanie bossow"
