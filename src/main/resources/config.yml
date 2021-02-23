@@ -28,7 +28,16 @@ gui:
       - "&e100% &7x5 Złoto"
       - "&e70% &7x1 Przedmiot od czarnego rycereza"
       - "&e40% &7x1 Jakis unikatowy przedmiot"
-  8:
+  2:
+    material: SPIDER_EYE
+    name: "&6&lCZARNA WDOWA"
+    lore:
+      - "&eZ tego bossa wypadaja przedmioty:"
+      - "&e20% &7x3 Diament"
+      - "&e100% &7x5 Złoto"
+      - "&e70% &7x1 Przedmiot od czarnej wdowy"
+      - "&e40% &7x1 Jakis unikatowy przedmiot"
+  22:
     material: CLOCK
     name: "&eSpawnowanie sie bossow"
     lore:

@@ -1,28 +1,28 @@
-mob-type: ZOMBIE
-health: 250
-name: "&4&lKROL ZOMBIE"
-exp-drop-amount: 350
+mob-type: SPIDER
+health: 150
+name: "&6&lCZARNA WDOWA"
+exp-drop-amount: 500
 abilities:
   thunder-on-player: true
-  spawn-minions: 5
-  spawn-cave-spiders: 0
+  spawn-minions: 0
+  spawn-cave-spiders: 5
   explosions: false
-  throw-player: true
-  apply-potion-effects-to-player: false
-  mob-is-fast: true
-  block-player-damage: false
+  throw-player: false
+  apply-potion-effects-to-player: true
+  mob-is-fast: false
+  block-player-damage: true
 weapon:
   material: DIAMOND_SWORD
   durability: 3
-  sharpness: 5
-  fire-aspect: 1
+  sharpness: 3
+  fire-aspect: 0
   knockback: 0
   power: 0
   punch: 0
   flame: 0
   infinity: 0
   protection: 0
-  name: "&cMiecz krola zombie"
+  name: "&cNoga czarnej wdowy"
   lore:
     - "&eBla bala bla bla"
 drop:
@@ -46,7 +46,7 @@ drop:
     material: TRIPWIRE_HOOK
     chance: 70.35
     amount: 1
-    name: "&dKlucz do normal_case skrzynki"
+    name: "&dPrzedmiot od czarnej wdowy"
     lore:
       - "&6Otworzysz tym &enormal_case &6skrzynke"
     custom-name-enabled: true
@@ -54,7 +54,7 @@ drop:
     material: TRIPWIRE_HOOK
     chance: 40.75
     amount: 1
-    name: "&dKlucz do legendarna skrzynki"
+    name: "&dJakis unikatowy przedmiot"
     lore:
       - "&6Otworzysz tym &elegendarna &6skrzynke"
     custom-name-enabled: true

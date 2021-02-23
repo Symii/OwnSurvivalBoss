@@ -1,10 +1,11 @@
 mob-type: SKELETON
-health: 400
+health: 150
 name: "&8&lCZARNY RYCERZ"
 exp-drop-amount: 500
 abilities:
   thunder-on-player: true
   spawn-minions: 0
+  spawn-cave-spiders: 0
   explosions: false
   throw-player: false
   apply-potion-effects-to-player: true

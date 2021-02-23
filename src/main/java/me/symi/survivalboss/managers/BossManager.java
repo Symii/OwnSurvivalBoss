@@ -42,7 +42,7 @@ public class BossManager {
     private boolean thunder_ability, explosion_ability, throw_ability, potions_ability, fast_ability, blocking_damage_ability;
     private ItemStack weapon;
     private HashMap<ItemStack, Double> drop_items = new HashMap<>();
-    private int minions_amount;
+    private int minions_amount, cave_spiders_amount;
 
     public BossManager(Main plugin, File file)
     {
@@ -132,6 +132,7 @@ public class BossManager {
 
         thunder_ability = config.getBoolean("abilities.thunder-on-player");
         minions_amount = config.getInt("abilities.spawn-minions");
+        cave_spiders_amount = config.getInt("abilities.spawn-cave-spiders");
         explosion_ability = config.getBoolean("abilities.explosions");
         throw_ability = config.getBoolean("abilities.throw-player");
         potions_ability = config.getBoolean("abilities.apply-potion-effects-to-player");
@@ -180,6 +181,10 @@ public class BossManager {
             }
             drop_items.put(item, chance);
         }
+    }
+
+    public int getCave_spiders_amount() {
+        return cave_spiders_amount;
     }
 
     public EntityType getMob_type() {

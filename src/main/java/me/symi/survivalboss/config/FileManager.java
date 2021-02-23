@@ -15,6 +15,15 @@ public class FileManager {
 
     private void createConfig()
     {
+        File czarna_wdowa_file = new File(plugin.getDataFolder() + File.separator + "bossy", "czarna_wdowa.yml");
+        if(!czarna_wdowa_file.exists())
+        {
+            czarna_wdowa_file.getParentFile().mkdir();
+            plugin.saveResource("czarna_wdowa.yml", false);
+            File createdFile = new File(plugin.getDataFolder(), "czarna_wdowa.yml");
+            createdFile.renameTo(new File(plugin.getDataFolder() + File.separator + "bossy" + File.separator + "czarna_wdowa.yml"));
+        }
+
         File dark_knight_file = new File(plugin.getDataFolder() + File.separator + "bossy", "dark_knight.yml");
         if(!dark_knight_file.exists())
         {

@@ -89,6 +89,14 @@ public class EntityListeners implements Listener {
                         return;
                     }
 
+                    if(bossManager.getCave_spiders_amount() >= 1 && rand.nextInt(11) == 0)
+                    {
+                        spawnCaveSpiders(livingEntity.getLocation(), bossManager.getName(), bossManager.getCave_spiders_amount());
+                        livingEntity.getWorld().playSound(livingEntity.getLocation(), Sound.ENTITY_HORSE_DEATH, 0.6f, 0.6f);
+                        damager.sendMessage(ChatUtil.fixColors(bossManager.getName() + " &cMoje miniony! POWSTANCIE!!"));
+                        return;
+                    }
+
                     if(bossManager.isBlocking_damage_ability() && rand.nextInt(12) == 0)
                     {
                         event.setCancelled(true);
@@ -159,6 +167,26 @@ public class EntityListeners implements Listener {
             ItemStack weapon = new ItemStack(Material.IRON_AXE);
             weapon.addUnsafeEnchantment(Enchantment.DAMAGE_ALL, 3);
             zombie.getEquipment().setItemInMainHand(weapon);
+        }
+
+    }
+
+    private void spawnCaveSpiders(Location location, String boss_name, int amount)
+    {
+        for(int i = 1; i <= amount; i++)
+        {
+            CaveSpider spider = (CaveSpider) location.getWorld().spawnEntity(location, EntityType.CAVE_SPIDER);
+            spider.setCustomNameVisible(true);
+            spider.setCustomName(ChatUtil.fixColors("&eMinion &7- " + boss_name));
+            spider.getAttribute(Attribute.GENERIC_MAX_HEALTH).setBaseValue(30);
+            spider.setHealth(30);
+            ItemStack helmet = new ItemStack(Material.IRON_HELMET);
+            helmet.addUnsafeEnchantment(Enchantment.PROTECTION_ENVIRONMENTAL, 3);
+            spider.getEquipment().setHelmet(helmet);
+            spider.addPotionEffect(new PotionEffect(PotionEffectType.SPEED, 2300000, 0));
+            ItemStack weapon = new ItemStack(Material.IRON_AXE);
+            weapon.addUnsafeEnchantment(Enchantment.DAMAGE_ALL, 3);
+            spider.getEquipment().setItemInMainHand(weapon);
         }
 
     }
